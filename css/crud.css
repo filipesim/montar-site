@@ -1,0 +1,135 @@
+#loading{
+    background: linear-gradient(#9656bf, #4a00c0b8, #1b5999);
+    position: fixed;
+    z-index: 9999999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.loader{
+    border-radius: 50%;
+    border-top: 3px solid #fff;
+    width: 62px;
+    height: 62px;
+    -webkit-animation: spin 0.7s linear infinite;
+    animation: spin 0.7s linear infinite;
+}
+
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin{
+    0%{ 
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#content{
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 0!important;
+}
+
+#photo{
+    background-image: url('image/code.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0!important;
+}
+
+#gradient{
+    background: linear-gradient(#9656bfdb, #4a00c07a, #1b5999fa);
+    padding: 5%;
+    height: 20vh;
+}
+
+h1{
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 0!important;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #0000006b;
+}
+
+#author{
+    color: #fff;
+    margin: 0!important;
+    font-weight: lighter;
+    text-shadow: 0 0 15px #000;
+}
+
+#list{
+    height: 80vh;
+    padding: 5%;
+}
+
+h2{
+    color: #333;
+    font-weight: lighter!important;
+    text-transform: uppercase;
+}
+
+#data{
+    margin-top: 5%;
+}
+
+table button{
+    font-size: 12px!important;
+}
+
+th{
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+td{
+    font-weight: lighter;
+    color: #777;
+}
+
+td p{
+    margin: 0!important;
+}
+
+.last-update{
+    font-size: 10px;
+}
+
+.btn-outline-danger{
+    margin-top: 5px;
+}
+
+#add_button{
+    margin-bottom: 100px;
+}
+
+#alert{
+    display: none;
+    opacity: 0;
+}
+
+@media(min-width: 768px){
+    #gradient{
+        height: 100vh;
+    }
+
+    #list{
+        height: 100vh;
+    }
+
+    .btn-outline-danger{
+        margin-left: 5px;
+        margin-top: 0;
+    }
+}
+

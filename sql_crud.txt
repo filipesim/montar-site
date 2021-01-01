@@ -1,0 +1,9 @@
+create DATABASE timakeco_crud; 
+
+create table tb_user(
+	cd_user int not null auto_increment,
+	nm_user varchar(150) not null,
+	dt_last_update timestamp,
+
+	constraint tb_user_cd_user primary key(cd_user)
+);
